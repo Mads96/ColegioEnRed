@@ -8,11 +8,11 @@ if(isset($_POST['user']) && !empty($_POST['user']) &&
 $con=mysql_connect($host, $user, $pw) or die("problemas con servidor");
 mysql_select_db($db, $con) or die("problemas con DB");
 
-	$sel= mysql_query("SELECT USER, PW FROM usuarios WHERE USER= '$_POST[user]'", $con);
+	$sel= mysql_query("SELECT login_correo, login_pass FROM login WHERE login_correo= '$_POST[user]'", $con);
 
 $sesion= mysql_fetch_array($sel);
 
-if($_POST['pw']==$sesion['PW']){
+if($_POST['pw']==$sesion['login_pass']){
 	$_SESSION['username'] = $_POST['user'];
 	header('Location: ../inicio.php');
 

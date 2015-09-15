@@ -13,6 +13,7 @@
 <body>
 	<form action="verificar.php" method="post">
 		<p>colegio</p>
+		<select>uno</select>
 		<input type="text" name="colegio" ><br/><br/>
 		<p>Nombre</p>
 		<input type="text" name="user" ><br/><br/>

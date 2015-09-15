@@ -1,0 +1,9 @@
+<select name="insumos" required="required"> 
+    <option value="">Selecciona un balasto de la lista</option> 
+                            <?php 
+                            while ($campobalasto = mysql_fetch_array($balasto)) { ?> 
+                                 
+<option value="<?php echo $campobalasto['id']; ?>"><?php echo $campobalasto['nombre']; ?></option> 
+
+                    <?php } ?> 
+</select> 
