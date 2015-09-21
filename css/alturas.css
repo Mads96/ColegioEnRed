@@ -1,0 +1,45 @@
+.altura-1{
+	min-height: 100px;
+}
+.altura-2{
+	min-height: 200px;
+}
+.altura-3{
+	min-height: 300px;
+}
+.altura-4{
+	min-height: 400px;
+}
+.altura-5{
+	min-height: 500px;
+}
+.altura-6{
+	min-height: 600px;
+}
+.altura-7{
+	min-height: 700px;
+}
+.altura-8{
+	min-height: 800px;
+}
+
+@media (max-width: 800px) {
+.altura-1{
+	min-height: 0px;
+}
+.altura-2{
+	min-height: 0px;
+}
+.altura-3{
+	min-height: 0px;
+}
+.altura-4{
+	min-height: 0px;
+}	
+.altura-6{
+	min-height: 0px;
+}	
+.altura-6{
+	min-height: 0px;
+}	
+}

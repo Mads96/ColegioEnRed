@@ -12,21 +12,22 @@ include("login/conexion.php");
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/mads.css">
+	<link rel="stylesheet" href="css/alturas.css">
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/mads.js"></script>
 	<title>colegios en red</title>
 </head>
 <body>
 			<div class="cabecera col-10 bg-purpura">
-			<div class="cabecera col-85 text-blanco"><h1>Colegios en red</h1><p class="col-10">Todo lo que pasa en tu colegio podria estar aquí.
+			<div class="cabecera col-85 text-blanco"><h3>Colegios en red</h3><p class="col-10">Todo lo que pasa en tu colegio podria estar aquí.
 			</p>
 			<button class="btn-lg  btn-purpura " onclick="hola('.ingreso','no-se-ve')">INGRESAR</button>
 			<button class="btn-lg  btn-purpura " onclick="hola('.registro','no-se-ve')">REGISTRAR</button>
 			
 		</div>
-			<div class="articulo-logo col-15"><img src="img/logo.png" alt="" ></div>
+			<div class="articulo-logo col-15 no-movil"><img src="img/logo.png" alt="" ></div>
 			</div>
-			<nav class="nav col-10 bg-purpura text-blanco text-right">
+			<nav class="nav col-10 bg-purpura text-blanco text-right no-movil">
 				<ul>
 					<li>uno |</li>
 					<li>dos |</li>
@@ -35,46 +36,62 @@ include("login/conexion.php");
 					<li>cinco |</li>
 				</ul>
 			</nav>
-			<div class="conenedor">
-				
-				<div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
-				</div><div class="articulo col-8 col-off-1 bg-purpura-trans">
-					<div class="articulo"><h1>Hola mundo</h1></div>
+			<div class="contenedor">
+
+				<div class="articulo col-10 bg-blanco text-negro text-justificado" >
+				<h3>¿Que es?</h3>
+				<p>
+				El proyecto está pensado en brindar una herramienta de apoyo para el mundo escolar, incluyendo en este grupo a profesores alumnos y apoderados. para esto se desarrollará un servicio web que constará de varias etapas de desarrollo, enfocadas en los distintos actores.
+				</p>
+				</div>
+			<div class="articulo col-3 bg-verde altura-2 btn"style="margin-right:5%;">
+				<div class="articulo col-10 text-blanco  text-center" >
+				<h3>Primera etapa:</h3><p><h3>canalizar el costo monetario de las responsabilidades escolares...</h3></p>
 				</div>
 
+				<!-- <div class="articulo col-10 text-blanco text-justificado">
+				
+				<p>
+				La primera etapa de colegios en red estará focalizada en canalizar el costo monetario de las responsabilidades escolares y a su vez permitir el desarrollo de una comunidad escolar comprometida con la realidad socio-cultural y económica de todos los involucrados.
+En esta etapa se desarrollará un portal filtrado por colegios en el cual permitiremos la publicación de artículos relacionados con el mundo escolar así, se permitirá la movilidad de artículos usados y nuevos como textos escolares, libros de lectura domiciliaria, uniformes, etc.. 
+Para esto los colegios interesados deberán inscribirse sin costo en nuestro sitio a través de un representante del colegio directamente o en su defecto del centro de padres.
+				</p>
+				</div>
+				-->
+			</div>
+<div class="articulo col-3 bg-azul altura-2 btn" style="margin-right:5%;">
+				<div class="articulo col-10 text-blanco  text-center" >
+				<h3>Segunda etapa:</h3><p><h3>Usar el interes tecnológico como veneficio para la educación...</h3></p>
+				</div>
+
+				<!--<div class="articulo col-10 text-blanco text-justificado">
+				
+				<p>
+				La primera etapa de colegios en red estará focalizada en canalizar el costo monetario de las responsabilidades escolares y a su vez permitir el desarrollo de una comunidad escolar comprometida con la realidad socio-cultural y económica de todos los involucrados.
+En esta etapa se desarrollará un portal filtrado por colegios en el cual permitiremos la publicación de artículos relacionados con el mundo escolar así, se permitirá la movilidad de artículos usados y nuevos como textos escolares, libros de lectura domiciliaria, uniformes, etc.. 
+Para esto los colegios interesados deberán inscribirse sin costo en nuestro sitio a través de un representante del colegio directamente o en su defecto del centro de padres.
+				</p>
+				</div>-->
+			
+			</div>
+<div class="articulo col-3 bg-celeste altura-2 btn">
+				<div class="articulo col-10 text-blanco  text-center" >
+				<h3>Tercera etapa:</h3><p><h3>Acercar la documentacion y transparencia a padres y apoderados...</h3></p>
+				</div>
+
+				<!--<div class="articulo col-10 text-blanco text-justificado">
+				
+				<p>
+				La primera etapa de colegios en red estará focalizada en canalizar el costo monetario de las responsabilidades escolares y a su vez permitir el desarrollo de una comunidad escolar comprometida con la realidad socio-cultural y económica de todos los involucrados.
+En esta etapa se desarrollará un portal filtrado por colegios en el cual permitiremos la publicación de artículos relacionados con el mundo escolar así, se permitirá la movilidad de artículos usados y nuevos como textos escolares, libros de lectura domiciliaria, uniformes, etc.. 
+Para esto los colegios interesados deberán inscribirse sin costo en nuestro sitio a través de un representante del colegio directamente o en su defecto del centro de padres.
+				</p>
+				</div>-->
+			
 			</div>
 
+
+			</div>
 
 				<div class=" ingreso pop bg-purpura text-center  text-blanco no-se-ve">
 					<form action="login/verificar.php"  method="post">
@@ -89,20 +106,20 @@ include("login/conexion.php");
 						<input type="password" name="pw" ><br/><br/>
 						<button type="submit" class="btn btn-lg btn-purpura">INGRESAR</button><br/>
 						<button class="btn btn-sm btn-purpura">REGISTRAR</button>
-						<p ><h1 class="cerrar btn" onclick="hola('.ingreso','no-se-ve')">cerrar</h1></p>
+						<p ><h3 class="cerrar btn" onclick="hola('.ingreso','no-se-ve')">cerrar</h3></p>
 					</form>
 					
 				</div>
 			<div class=" registro pop bg-purpura text-center  text-blanco no-se-ve">
-					<form action="verificar.php" method="post">
+					<form action="registro.php" method="post">
 						<br/>
 						<img src="img/logo.png" alt="" >
 						<br/>
 						<br/>
 						<br/>
 						<p>colegio </p>
-						<select name="insumos" required="required"> 
-    <option value="">Selecciona un balasto de la lista</option> 
+						<select name="comuna" required="required"> 
+    						<option value="">Selecciona una comuna</option> 
       <?php 
                    $con=mysql_connect($host, $user, $pw) or die("problemas con servidor");
 					mysql_select_db($db, $con) or die("problemas con DB");
@@ -128,7 +145,7 @@ include("login/conexion.php");
 						<p>Password</p>
 						<input type="password" name="pw" ><br/><br/>
 						<input type="submit" value="ingresar">
-						<p ><h1 class="cerrar btn" onclick="hola('.registro','no-se-ve')">cerrar</h1></p>
+						<p ><h3 class="cerrar btn" onclick="hola('.registro','no-se-ve')">cerrar</h3></p>
 					</form>
 				</div>
 			
