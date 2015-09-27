@@ -1081,7 +1081,7 @@ p {
     margin: 0 0 10px;
 }
 .pop {
-    position: fixed;
+    position: absolute;
     top: 0;
     background-color: #000;
     width: 100%;
@@ -1094,6 +1094,8 @@ p {
 }
 .no-se-ve {
     visibility: hidden;
+    position: absolute;
+    top:-100%;
 }
 .cerrar {
     position: absolute;
@@ -1109,6 +1111,12 @@ codigo bloqueo:jm051829;
 Codigo devito:16036261 ;
 Mi celular:51049164;
 */
+.redondeado{
+    border-radius: 30px;
+
+}
+
+
 @media (max-width: 800px) {
 
   .no-movil{
@@ -1126,10 +1134,11 @@ Mi celular:51049164;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+    
     }
     .articulo-logo img{
     max-width: 30%;
-    margin-left: 35%
+    margin-left: 35%;
     float: left;
     overflow: hidden;
     -webkit-box-sizing: border-box;
