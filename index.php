@@ -61,7 +61,7 @@ include("login/conexion.php");
 				
 				<div class="articulo redondeado col-3 bg-azul altura-2 btn" style="margin-right:5%;" >
 					<div class=" articulo col-10 text-blanco  text-center" onclick="hola('.segunda','no-se-ve')" >
-						<h3>Segunda etapa:</h3><p><h3>Usar el interes tecnológico como veneficio para la educación...</h3></p>
+						<h3>Segunda etapa:</h3><p><h3>Usar el interes tecnológico como beneficio para la educación...</h3></p>
 					</div>
 
 					<div class=" segunda no-se-ve articulo col-10 text-blanco text-justificado">
@@ -91,11 +91,11 @@ include("login/conexion.php");
 
 			</div><!-- fin contenedor -->
 
-			<div class="contenedor bg-azul">
+			<div class="cabecera col-10 bg-purpura">
 				<h1>FOOTER</h1>
 			</div>
 
-		<!-- /////////////////////////////////// FIN INGRESO ////////////////////// -->
+		<!-- /////////////////////////////////// FIN INGRESO ////////////////////// 
 
 			<div class=" ingreso pop bg-purpura text-center  text-blanco no-se-ve">
 					<form action="login/verificar.php"  method="post">
@@ -113,7 +113,32 @@ include("login/conexion.php");
 							<p ><h3 class="cerrar btn" onclick="hola('.ingreso','no-se-ve')">cerrar</h3></p>
 					</form>		
 			</div> 
+		 /////////////////////////////////// FIN INGRESO ////////////////////// -->
+
+
 		<!-- /////////////////////////////////// FIN INGRESO ////////////////////// -->
+
+			<div class=" ingreso pop bg-purpura text-center  text-blanco no-se-ve">
+
+<form action="persa.php" method="post">
+
+<select name="nombre" id="id">
+			<?php
+				$con=mysql_connect($host, $user, $pw) or die("problemas con servidor");
+				mysql_select_db($db, $con) or die("problemas con DB");
+
+				$sel= mysql_query("SELECT * FROM colegios", $con); 
+				while ($colegio= mysql_fetch_array($sel)){
+				echo "<option value=".$colegio['colegio_id'].">".$colegio['colegio_nombre'] . "</option>";}
+
+			?>
+	<input type="submit" value="ver">		 
+</select>
+
+</form>
+			</div> 
+		<!-- /////////////////////////////////// FIN INGRESO ////////////////////// -->
+
 
 
 		<!-- /////////////////////////////////// REGISTRO USUARIO////////////////////// -->
